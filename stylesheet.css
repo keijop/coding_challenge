@@ -1,0 +1,29 @@
+html, body{
+	font-family: 'Helvetica Neue';
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+}
+
+.result{
+	display: grid;
+	grid-template-rows: auto auto;
+	grid-template-columns:  auto auto auto;
+	border: 2px solid red;
+	background-image: linear-gradient(90deg, #F29E9A, #E8C5C3, #F7E68F, #D5F8FA,  #9AEEF2);
+	font-size: 4vw;
+}
+.result__cell{
+	margin: 2vw;
+	padding: 1vw;
+	text-align: left;	
+	vertical-align: top;
+}
+
+img{
+	vertical-align: middle;
+	height: 6vw;
+}
+span{
+	padding: 1vw;
+}
