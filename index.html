@@ -5,53 +5,81 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	<form>
-		<label for="distance">Ajomatka:</label>
-		<input id="distance" type="number" name="distance"><br>
-		<label for="speed1">Nopeus vaihtoehto 1:</label>
-		<input id="speed1" type="number" name="speed1"><br>
-		<label for="speed2">Nopeus vaihtoehto 2:</label>
-		<input id="speed2" type="number" name="speed2"><br>
-		<label for="vehicleA">matala</label>
-		<input id="vehicleA" type="radio" name="vehicle" value="3"><br>
-		<label for="vehicleB">keskitaso</label>
-		<input id="vehicleB" type="radio" name="vehicle" value="3.5"><br>
-		<label for="vehicleC">korkea</label>
-		<input id="vehicleC" type="radio" name="vehicle" value="4"><br>
-		<button class="resultButton">Laske</button>
-	</form>
-	<div class="result">
-		<div class="result__cell">
-			<img src="speedometer-1.svg">
-			<span class="speed_1"></span>
+	<div class="wrapper">
+		<div class="title">
+			<h1>Autoilumittari</h1>
 		</div>
-		<div class="result__cell diff"></div>
-		<div class="result__cell">
-			<img src="speedometer-1.svg">
-			<span class="speed_2"></span>
-		</div>
-		<div class="result__cell ">
-			<img src="clock.svg">
-			<span class="time1"></span>
-		</div>
-		<div class="result__cell time_diff"></div>
-		<div class="result__cell">
-			<img src="clock.svg">
-			<span class="time2"></span>
-		</div>
-		<div class="result__cell">
-			<img src="petrol.svg">
-			<span class="petrol1"></span>
-		</div>
-		<div class="result__cell fuel_diff"></div>
-		<div class="result__cell">
-			<img src="petrol.svg">
-			<span class="petrol2"></span>
+		<div class="main">
+			<form>
+				<fieldset>
+					<label for="distance">Ajomatka km:</label>
+					<input id="distance" type="number" name="distance"><br>
+				</fieldset>
+				<fieldset>
+					<label for="speed1">Nopeus km/h:</label>
+					<input id="speed1" type="number" name="speed1"><br>
+					<label for="speed2">Nopeus km/h:</label>
+					<input id="speed2" type="number" name="speed2"><br>
+				</fieldset>
+				<fieldset>
+					<p>Polttoaine kulutus:</p><br>
+					<label for="low">matala</label>
+					<input id="low" type="radio" name="vehicle" value="3"><br>
+					<label for="medium">keskitaso</label>
+					<input id="medium" type="radio" name="vehicle" value="3.5"><br>
+					<label for="high">korkea</label>
+					<input id="high" type="radio" name="vehicle" value="4"><br>
+				</fieldset>
+				<button class="resultButton" type="button">LASKE</button>
+			</form>
+			<details>
+				<summary>
+					<i class="fa fa-info" aria-hidden="true"></i>
+				</summary>
+				<ul>
+					<li>&#9658 Täytä kaikki kentät</li>
+					<li>&#9658 Paina "Laske"</li>
+					<li>&#9658 Taulukkossa näkee tulokset ja ero</li>
+				</ul>
+			</details>	
+			<div class="result">
+				<div class="result__cell">
+					<img src="speedometer-1.svg">
+					<span class="speed_1"></span>
+				</div>
+				<div class="result__cell diff"></div>
+				<div class="result__cell">
+					<img src="speedometer-1.svg">
+					<span class="speed_2"></span>
+				</div>
+				<div class="result__cell ">
+					<img src="clock.svg">
+					<span class="time1"></span>
+				</div>
+				<div class="result__cell time_diff"></div>
+				<div class="result__cell">
+					<img src="clock.svg">
+					<span class="time2"></span>
+				</div>
+				<div class="result__cell">
+					<img src="petrol.svg">
+					<span class="petrol1"></span>
+				</div>
+				<div class="result__cell fuel_diff"></div>
+				<div class="result__cell">
+					<img src="petrol.svg">
+					<span class="petrol2"></span>
+				</div>
+			</div>
+			<div class="alert">Täytä kaikki kentät ja<br>varmistaa että tiedot ovat numeroina!</div>
 		</div>
 	</div>
-	<div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+	<!--
+		<div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+	-->
 	<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
