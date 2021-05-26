@@ -2,6 +2,7 @@ html, body{
 	min-height: 100vh;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
+	color: #0B0B32;
 }
 body{
 	display: flex;
@@ -13,8 +14,11 @@ body{
 	font-weight: 500;
 }
 .wrapper{
-	margin: 1vh;
-	background-image: linear-gradient(90deg, #F29E9A, #E8C5C3, #F7E68F, #D5F8FA,  #9AEEF2);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0.5vw;
+	background-image: linear-gradient(-45deg, #F29E9A, #E8C5C3, #F7E68F, #D5F8FA,  #9AEEF2);
 }
 .title{
 	text-align: center;
@@ -47,7 +51,7 @@ fieldset>p{
 	width: auto;
 }
 input{
-	width: 6vw;
+	width: 10vw;
 	border: 2px solid #BBBBF0;
 	border-radius: 5px;
 	margin: 1vw;
@@ -58,15 +62,22 @@ input[type=radio]:hover, input[type=radio]:focus{
 	transition: 0.3s;
 }
 summary{
+	color: #191970;
 	padding: 1vw;
-	background-image: linear-gradient(90deg, #E7534C, #DDAAA7, #F5DF71, #88EBF1,  #24DAE3);
+	background-image: linear-gradient(-45deg, #E7534C, #DDAAA7, #F5DF71, #88EBF1,  #24DAE3);
 }
+summary:hover, summary:focus{
+		color: red;
+	}
 details{
 	text-align: center;
 }
 ul{
 	margin-bottom: 0;
 	text-align: left;
+}
+.animation{
+	display: none;
 }
 .result{
 	display: grid;
@@ -81,16 +92,21 @@ ul{
 	margin: 4vw 4vw 0 0;
 	text-align: left;	
 }
+.result--animation{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 button{
 	margin: 4vw auto auto auto;
 	padding: 4vw;
 	width: 100%;
 	font-weight: bold;
 	font-size: 3.5vw; 
-	background-image: linear-gradient(90deg, #E7534C, #DDAAA7, #F5DF71, #88EBF1,  #24DAE3);
+	background-image: linear-gradient(-45deg, #E7534C, #DDAAA7, #F5DF71, #88EBF1,  #24DAE3);
 }
-button:hover, summary:hover, button:focus, summary:focus{
-	outline: 1.5vw solid #FFFFF0;
+button:hover, details:hover, button:focus, details:focus{
+	outline: 1vw solid #FFFFF0;
 }
 img{
 	vertical-align: middle;
@@ -101,11 +117,6 @@ span{
 }
 li{
 	list-style: none;
-}
-.wrapper{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 }
 .alert{
 	position: absolute;
@@ -132,6 +143,7 @@ li{
 	.wrapper{
 		display: flex;
 		margin: 2vw;
+		position: relative;
 	}
 	.main{
 		display: flex;
@@ -142,8 +154,31 @@ li{
 		width: 40%;
 		margin-top: 0;
 	}
+	input{
+		width: 5vw;
+	}
 	details{
-		display: none;
+		position: absolute;
+		margin: 1vw;
+		right: 0;
+		top: 0;
+		background-image: none;
+		background-color: rgb(248, 248, 255, 0.95);
+		padding: 0;
+	}
+	details:hover, details:focus{
+		outline: .5vw solid #FFFFF0; 
+	}
+	summary{ 
+		background-color: rgb(248, 248, 255, 0.2);
+		background-image: none;
+		border: none;
+	}
+	ul{
+		margin: 3vw 3vw 3vw 0;
+	}
+	li{
+		margin-top: 0.5vw;
 	}
 	button{
 		padding: 1vw;
@@ -156,6 +191,9 @@ li{
 		margin: 4vw 1vw 0 0;
 		font-size: 1.5vw;
 	}
+	
+
+ 	
 
 
 }
