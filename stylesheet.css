@@ -67,7 +67,7 @@ summary{
 	background-image: linear-gradient(-45deg, #E7534C, #DDAAA7, #F5DF71, #88EBF1,  #24DAE3);
 }
 summary:hover, summary:focus{
-		color: red;
+		color: #FF0000;
 	}
 details{
 	text-align: center;
@@ -167,7 +167,7 @@ li{
 		padding: 0;
 	}
 	details:hover, details:focus{
-		outline: .5vw solid #FFFFF0; 
+		outline: 0.5vw solid #FFFFF0; 
 	}
 	summary{ 
 		background-color: rgb(248, 248, 255, 0.2);
@@ -191,11 +191,6 @@ li{
 		margin: 4vw 1vw 0 0;
 		font-size: 1.5vw;
 	}
-	
-
- 	
-
-
 }
 
 

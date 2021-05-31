@@ -2,8 +2,8 @@
 	  transform: scale(2);
 	  color: coral;
 	  position: relative;
-	  top: -100px;
-	  left: -80px;
+	  top: -50%;
+	  left: 20%;
 	  animation-name: sun;
 	  animation-duration: 2s;
 	  animation-iteration-count: infinite;
