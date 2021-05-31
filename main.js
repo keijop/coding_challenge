@@ -30,8 +30,8 @@ const alert = document.querySelector('.alert')
 //mouse click anywhere except "laske" button will make alert dissappear and set focus on missing input
 const clickHandle = (event) => {
 	if(!event.target.classList.contains('resultButton')){ 
-		if(alert.classList.contains('alert--visible')){
-			alert.classList.remove('alert--visible')
+		if(alert.classList.contains('elem--visible')){
+			alert.classList.remove('elem--visible')
 			setMissingInputFocus()
 		};
 	};
@@ -39,8 +39,8 @@ const clickHandle = (event) => {
 
 //any key will make alert dissappear and set focus on missing input
 const keyHandle = (event) => {
-	if(alert.classList.contains('alert--visible')){
-		alert.classList.remove('alert--visible')
+	if(alert.classList.contains('elem--visible')){
+		alert.classList.remove('elem--visible')
 		setMissingInputFocus()
 	};
 };	
@@ -62,7 +62,7 @@ const laskeClickHandle = () => {
 	//alert custom error msg if missing input
 	if(!distance || !speedKmh_1 || !speedKmh_2
 		|| !document.querySelector('input[name=vehicle]:checked')) {
-		alert.classList.add('alert--visible')
+		alert.classList.add('elem--visible')
 		scrollToView(alert)
 		return
 	}
@@ -95,6 +95,11 @@ const laskeClickHandle = () => {
 	document.querySelector('.fuel_diff').innerHTML = `${fuelDifference}l`
 	
 	scrollToView(document.querySelector('.result'));
+
+	[...document.querySelectorAll('.result__cell')].forEach(
+		cell => cell.classList.add('elem--visible'));
+
+	document.querySelector('.result').filter = blur()
 }
 
 document.querySelector('body').onload = function(){document.querySelector('input').focus()}

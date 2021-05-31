@@ -61,6 +61,9 @@ input[type=radio]:hover, input[type=radio]:focus{
 	transform: scale(1.1);
 	transition: 0.3s;
 }
+details:hover, details:focus{
+	outline: 1vw solid #FFFFF0;
+}
 summary{
 	color: #191970;
 	padding: 1vw;
@@ -80,6 +83,8 @@ ul{
 	display: none;
 }
 .result{
+	background-image: url(holiday.jpg);
+	background-position: center;
 	display: grid;
 	grid-template-rows: auto auto;
 	grid-template-columns:  auto auto auto;
@@ -90,12 +95,9 @@ ul{
 }
 .result__cell{
 	margin: 4vw 4vw 0 0;
-	text-align: left;	
-}
-.result--animation{
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	text-align: left;
+	transition-duration: 1s;
+	opacity: 0;
 }
 button{
 	margin: 4vw auto auto auto;
@@ -105,8 +107,9 @@ button{
 	font-size: 3.5vw; 
 	background-image: linear-gradient(-45deg, #E7534C, #DDAAA7, #F5DF71, #88EBF1,  #24DAE3);
 }
-button:hover, details:hover, button:focus, details:focus{
+button:focus, button:hover{
 	outline: 1vw solid #FFFFF0;
+	color: #FF0000;
 }
 img{
 	vertical-align: middle;
@@ -135,7 +138,7 @@ li{
 	opacity: 0;
 	transition: 0.3s;
 }
-.alert--visible{
+.elem--visible{
 	opacity: 1;
 }
 
