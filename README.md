@@ -3,16 +3,19 @@
 **[Koodihaaste](https://koodihaaste.solidabis.com/#/)**   
 Web app vertailee polttoaine kulutusta ja matkaaikaa ajamalla kahdella eri nopeuksella.   
 Polttoainekulutus on laskettu käyttämällä geometrisen sarjan ominaisuuksia:   
-a<sub>n</sub> = a<sub>1</sub> * r<sup>n-1</sup>
+a<sub>n</sub> = a<sub>1</sub> * r<sup>n-1</sup>   
+
 - Mukautuva suunnittelu   
 - Mobile-first   
-- Funktionaalinen ohjelmointi
+- Funktionaalinen ohjelmointi   
 
-
-Käytetyt teknologiat:   
+Käytetyt teknologiat ja työkalut:   
 - Javascript   
 - CSS   
-- HTML5   
+- HTML5
+- Sublime Text
+- Firefox browser dev tools
+- MacOS   
  &nbsp;   
  
 **PS Työharjoittelupaikka uranvaihtajalle olisi mahtavaa :)**   
@@ -30,7 +33,10 @@ a<sub>n</sub> = a<sub>1</sub> * r<sup>n-1</sup>
 - Mobile-first      
 - Functional programming   
    
-Technologies:
+Technologies and tools:
 - Javascript   
 - CSS   
 - HTML5
+- Sublime Text
+- Firefox browser dev tools
+- MacOS 
