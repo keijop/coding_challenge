@@ -83,7 +83,7 @@ ul{
 	display: none;
 }
 .result{
-	background-image: url(holiday.jpg);
+	background-image: url(assets/map.jpg);
 	background-position: center;
 	display: grid;
 	grid-template-rows: auto auto;
