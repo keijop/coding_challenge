@@ -24,6 +24,10 @@ body{
 	text-align: center;
 	margin: auto;
 }
+form{
+	background-image: url(assets/map.jpg);
+	background-position: center;
+}
 form, button, .result, details, fieldset, summary, .wrapper{
 	border-radius: 5px;
 	border: 2px solid #191970;
